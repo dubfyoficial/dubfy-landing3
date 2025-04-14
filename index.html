@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dubfy - Conectando Vozes ao Sucesso</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #FF4F4F;
+      --secondary-color: #ffffff;
+      --background-color: #fdfdfd;
+      --text-color: #2B2B2B;
+      --gray: #777;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 20px;
+      background-color: #fff2f2;
+    }
+
+    .hero-content {
+      max-width: 600px;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      color: var(--primary-color);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: var(--text-color);
+    }
+
+    .hero img {
+      max-width: 400px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 14px 28px;
+      font-weight: bold;
+      font-size: 1rem;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #e84646;
+    }
+
+    .section {
+      padding: 80px 20px;
+      background-color: white;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 50px;
+      color: var(--primary-color);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+    }
+
+    .feature-box {
+      background-color: #fafafa;
+      padding: 35px 25px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+      transition: transform 0.3s ease;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-box img {
+      width: 80px;
+      margin-bottom: 20px;
+    }
+
+    .feature-box h3 {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    .feature-box p {
+      color: var(--gray);
+      font-size: 0.95rem;
+    }
+
+    .testimonial-section {
+      background-color: #fff8f8;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .testimonial {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      border-left: 5px solid var(--primary-color);
+      padding: 30px;
+      font-style: italic;
+      border-radius: 10px;
+      color: #444;
+    }
+
+    .testimonial strong {
+      display: block;
+      margin-top: 20px;
+      font-style: normal;
+      font-weight: bold;
+      color: var(--text-color);
+    }
+
+    .cta-section {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .cta-section p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    form {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    form textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    footer {
+      background-color: #1b1b1b;
+      color: #bbb;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #fff;
+      margin: 0 10px;
+    }
+
+    @media (min-width: 768px) {
+      .hero {
+        flex-direction: row;
+        text-align: left;
+      }
+
+      .hero-content {
+        flex: 1;
+      }
+
+      .hero img {
+        flex: 1;
+        margin-bottom: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="https://undraw.co/api/illustrations/df370fcd-3894-4770-9a01-ef8478cbce41" alt="Pessoa gravando voz">
+    <div class="hero-content">
+      <h1>Dubfy - Sua voz em cena</h1>
+      <p>A plataforma que conecta dubladores e estúdios com agilidade, visibilidade e oportunidades reais.</p>
+      <a href="#cadastro" class="btn">🚀 Quero me cadastrar</a>
+    </div>
+  </section>
+
+  <!-- Dubladores -->
+  <section class="section">
+    <div class="container">
+      <h2>Para Dubladores</h2>
+      <div class="features">
+        <div class="feature-box">
+          <img src="https://undraw.co/api/illustrations/f6d6f8f8-e12d-44a4-bfbf-d99e399a0976" alt="">
+          <h3>🎙️ Crie seu Portfólio</h3>
+          <p>Mostre sua versatilidade vocal e conquiste novos trabalhos.</p>
+        </div>
+        <div class="feature-box">
+          <img src="https://undraw.co/api/illustrations/1ed6745d-4cd6-46db-a5f6-86604b6b7489" alt="">
+          <h3>🔍 Descubra Oportunidades</h3>
+          <p>Vagas e testes atualizados constantemente pra você não perder nada.</p>
+        </div>
+        <div class="feature-box">
+          <img src="https://undraw.co/api/illustrations/36d4b368-2757-4d3a-bc2d-1552f82a58a2" alt="">
+          <h3>🌟 Visibilidade Nacional</h3>
+          <p>Chegue a estúdios de todo o Brasil com apenas um clique.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Estúdios -->
+  <section class="section" style="background-color:#f8f8f8;">
+    <div class="container">
+      <h2>Para Estúdios e Diretores</h2>
+      <div class="features">
+        <div class="feature-box">
+          <img src="https://undraw.co/api/illustrations/4fd470ee-e0c3-4022-9c97-b0e03b973e59" alt="">
+          <h3>🎯 Encontre a Voz Certa</h3>
+          <p>Busque por timbre, localização, experiência e estilo de atuação.</p>
+        </div>
+        <div class="feature-box">
+          <img src="https://undraw.co/api/illustrations/f07e3d1b-e1c0-4f59-8461-e8cb9c9e21f5" alt="">
+          <h3>📂 Portfólios Acessíveis</h3>
+          <p>Ouça amostras de voz e visualize o perfil completo de cada talento.</p>
+        </div>
+        <div class="feature-box">
+          <img src="https://undraw.co/api/illustrations/1b0f1056-4c38-4b5a-8c01-4eb90d786d10" alt="">
+          <h3>📢 Divulgue Projetos</h3>
+          <p>Publique testes e convide profissionais com apenas alguns cliques.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimento -->
+  <section class="testimonial-section">
+    <h2>O que estão dizendo</h2>
+    <div class="testimonial">
+      “A Dubfy nos economizou dias de busca e entregou vozes que realmente se encaixavam no projeto. Inovadora e essencial para o mercado.”
+      <strong>— Ana L., Diretora de Produção, Estúdio VozAlta</strong>
+    </div>
+  </section>
+
+  <!-- Formulário -->
+  <section class="section" id="cadastro">
+    <div class="container">
+      <h2>Cadastre-se na Dubfy</h2>
+      <p style="text-align:center; max-width: 700px; margin: 0 auto 40px;">
+        Preencha o formulário e receba novidades e oportunidades antes de todo mundo.
+      </p>
+      <form id="dubfyForm">
+        <input type="text" name="data[nome]" placeholder="Nome completo" required>
+        <input type="email" name="data[email]" placeholder="Seu e-mail" required>
+        <input type="text" name="data[portfolio]" placeholder="Link do seu portfólio de voz" required>
+        <input type="text" name="data[cidade]" placeholder="Cidade / Estado" required>
+        <input type="text" name="data[experiencia]" placeholder="Experiência com dublagem" required>
+        <input type="text" name="data[redes]" placeholder="Instagram, LinkedIn, etc.">
+        <textarea name="data[mensagem]" placeholder="Conte um pouco mais sobre você (opcional)"></textarea>
+        <button type="submit" class="btn">🚀 Enviar minha inscrição</button>
+      </form>
+      <p id="mensagemStatus" style="text-align:center; margin-top: 20px;"></p>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Dubfy. Todos os direitos reservados.</p>
+    <p>
+      <a href="#">Instagram</a> |
+      <a href="#">LinkedIn</a> |
+      <a href="#">Política de Privacidade</a>
+    </p>
+  </footer>
+
+  <!-- Script de envio -->
+  <script>
+    document.getElementById("dubfyForm").addEventListener("submit", async function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const status = document.getElementById("mensagemStatus");
+      const data = new FormData(form);
+
+      const response = await fetch("https://sheetdb.io/api/v1/w3qgb6jzci6zc", {
+        method: "POST",
+        body: data
+      });
+
+      if (response.ok) {
+        status.innerText = "✅ Obrigado por se cadastrar! Em breve entraremos em contato.";
+        form.reset();
+      } else {
+        status.innerText = "❌ Algo deu errado. Tente novamente.";
+      }
+    });
+  </script>
+
+</body>
+</html>
